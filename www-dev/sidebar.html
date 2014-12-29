@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>政务系统统一身份认证系统</title>
+    <meta name="description" content="政务系统统一身份认证系统">
+    <!-- 禁用bootstrap响应式
+    <meta name="viewport" content="width=device-width">
+    -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/page/common.css">
+    <link rel="stylesheet" href="styles/page/sidebar.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="scripts/plugins/html5shiv/html5shiv.min.js"></script>
+    <script src="scripts/plugins/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- sidebar menu -->
+<div class="sidebar">
+    <div class="user-panel">
+        <img src="images/20121012023753480.jpg" class="img-circle" alt="User Image">
+
+        <p>你好, 王宝强</p>
+    </div>
+    <ul class="nav nav-sidebar">
+        <li class="active">
+            <a href="grzl.html" target="_blank"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                <span>个人资料</span></a>
+        </li>
+        <li>
+            <a href="updatepwd.html" target="_blank"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                <span>密码修改</span></a>
+        </li>
+        <li>
+            <a href="#"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> <span>我的消息</span></a>
+        </li>
+        <li>
+            <a href="#"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <span>系统导航</span></a>
+        </li>
+        <li>
+            <a href="#"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> <span>帮助文档</span></a>
+        </li>
+        <li>
+            <a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> <span>退出登录</span></a>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript" src="scripts/plugins/require.js"></script>
+<script>
+    require(['./scripts/boot'], function () {
+        require(['page/sidebar']);
+    });
+</script>
+</body>
+</html>

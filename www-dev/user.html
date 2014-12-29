@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>政务系统统一身份认证系统</title>
+    <meta name="description" content="政务系统统一身份认证系统">
+    <!-- 禁用bootstrap响应式
+    <meta name="viewport" content="width=device-width">
+    -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/page/common.css">
+    <link rel="stylesheet" href="styles/page/user.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="scripts/plugins/html5shiv/html5shiv.min.js"></script>
+    <script src="scripts/plugins/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--<ol class="breadcrumb">
+    <span>位置：</span>
+    <li><a href="#">首页</a></li>
+    <li><a href="#">Library</a></li>
+    <li class="active">Data</li>
+</ol>-->
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">用户管理</a></li>
+    <li role="presentation"><a href="#">角色管理</a></li>
+    <li role="presentation"><a href="#">资源管理</a></li>
+    <li role="presentation" class="#"><a href="#">单位管理</a></li>
+    <li role="presentation"><a href="#">部门管理</a></li>
+    <li role="presentation"><a href="#">行政区划</a></li>
+    <li role="presentation"><a href="#">字典管理</a></li>
+</ul>
+<div class="row">
+    <div class="col-xs-12 col-btn clearfix">
+        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> 搜 索</button>
+        <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-plus-sign"></span> 添 加</button>
+        <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-print"></span> 打 印</button>
+        <button type="button" class="btn btn-info rightal"><span class="glyphicon glyphicon glyphicon-th-list"></span> 列 表</button>
+        <button type="button" class="btn btn-info rightal"><span class="glyphicon glyphicon-th"></span> 阵 列</button>
+    </div>
+</div>
+<div class="panel panel-default" style="display: none" id="searchUser">
+    <div class="panel-body">
+        <form class="form-inline">
+            <div class="form-group">
+                <label class="sr-only" for="username">用户名</label>
+                <input type="text" class="form-control" id="username" placeholder="用户名">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="regDate">注册日期</label>
+                <input type="text" class="form-control" id="regDate" placeholder="注册日期">
+            </div>
+            <button type="submit" class="btn btn-danger">搜 索</button>
+        </form>
+    </div>
+</div>
+<div class="row" id="userlist">
+    <div class="col-xs-2">
+        <div class="userlistwp">
+            <div class="userlistbox">
+                <img src="images/suer-1.jpg" alt="..." class="img-rounded img-responsive">
+                <div class="userinfo">
+                    <p class="name">理想开发</p>
+                    <small>炊事班班长</small>
+                    <p>负责班里的起居饮</p>
+                    <div class="userevent">
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil"></span> 修改</buttom>
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-eye-open"></span> 审核</buttom>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-2">
+        <div class="userlistwp">
+            <div class="userlistbox">
+                <img src="images/suer-2.jpg" alt="..." class="img-rounded img-responsive">
+                <div class="userinfo">
+                    <p class="name">理想开发</p>
+                    <small>炊事班班长</small>
+                    <p>负责班里的起居饮</p>
+                    <div class="userevent">
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil"></span> 修改</buttom>
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-eye-open"></span> 审核</buttom>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-2">
+        <div class="userlistwp">
+            <div class="userlistbox">
+                <img src="images/suer-3.jpg" alt="..." class="img-rounded img-responsive">
+                <div class="userinfo">
+                    <p class="name">理想开发</p>
+                    <small>炊事班班长</small>
+                    <p>负责班里的起居饮</p>
+                    <div class="userevent">
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil"></span> 修改</buttom>
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-eye-open"></span> 审核</buttom>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-2">
+        <div class="userlistwp">
+            <div class="userlistbox">
+                <img src="images/suer-4.jpg" alt="..." class="img-rounded img-responsive">
+                <div class="userinfo">
+                    <p class="name">理想开发</p>
+                    <small>炊事班班长</small>
+                    <p>负责班里的起居饮</p>
+                    <div class="userevent">
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil"></span> 修改</buttom>
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-eye-open"></span> 审核</buttom>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-2">
+        <div class="userlistwp">
+            <div class="userlistbox">
+                <img src="images/suer-5.jpg" alt="..." class="img-rounded img-responsive">
+                <div class="userinfo">
+                    <p class="name">理想开发</p>
+                    <small>炊事班班长</small>
+                    <p>负责班里的起居饮</p>
+                    <div class="userevent">
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil"></span> 修改</buttom>
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-eye-open"></span> 审核</buttom>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-2">
+        <div class="userlistwp">
+            <div class="userlistbox">
+                <img src="images/suer-6.jpg" alt="..." class="img-rounded img-responsive">
+                <div class="userinfo">
+                    <p class="name">理想开发</p>
+                    <small>炊事班班长</small>
+                    <p>负责班里的起居饮</p>
+                    <div class="userevent">
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil"></span> 修改</buttom>
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-eye-open"></span> 审核</buttom>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-2">
+        <div class="userlistwp">
+            <div class="userlistbox">
+                <img src="images/suer-6.jpg" alt="..." class="img-rounded img-responsive">
+                <div class="userinfo">
+                    <p class="name">理想开发</p>
+                    <small>炊事班班长</small>
+                    <p>负责班里的起居饮</p>
+                    <div class="userevent">
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil"></span> 修改</buttom>
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-eye-open"></span> 审核</buttom>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-2">
+        <div class="userlistwp">
+            <div class="userlistbox">
+                <img src="images/suer-5.jpg" alt="..." class="img-rounded img-responsive">
+                <div class="userinfo">
+                    <p class="name">理想开发</p>
+                    <small>炊事班班长</small>
+                    <p>负责班里的起居饮</p>
+                    <div class="userevent">
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil"></span> 修改</buttom>
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-eye-open"></span> 审核</buttom>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-2">
+        <div class="userlistwp">
+            <div class="userlistbox">
+                <img src="images/suer-4.jpg" alt="..." class="img-rounded img-responsive">
+                <div class="userinfo">
+                    <p class="name">理想开发</p>
+                    <small>炊事班班长</small>
+                    <p>负责班里的起居饮</p>
+                    <div class="userevent">
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil"></span> 修改</buttom>
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-eye-open"></span> 审核</buttom>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-2">
+        <div class="userlistwp">
+            <div class="userlistbox">
+                <img src="images/suer-3.jpg" alt="..." class="img-rounded img-responsive">
+                <div class="userinfo">
+                    <p class="name">理想开发</p>
+                    <small>炊事班班长</small>
+                    <p>负责班里的起居饮</p>
+                    <div class="userevent">
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil"></span> 修改</buttom>
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-eye-open"></span> 审核</buttom>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-2">
+        <div class="userlistwp">
+            <div class="userlistbox">
+                <img src="images/suer-2.jpg" alt="..." class="img-rounded img-responsive">
+                <div class="userinfo">
+                    <p class="name">理想开发</p>
+                    <small>炊事班班长</small>
+                    <p>负责班里的起居饮</p>
+                    <div class="userevent">
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil"></span> 修改</buttom>
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-eye-open"></span> 审核</buttom>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-2">
+        <div class="userlistwp">
+            <div class="userlistbox">
+                <img src="images/suer-1.jpg" alt="..." class="img-rounded img-responsive">
+                <div class="userinfo">
+                    <p class="name">理想开发</p>
+                    <small>炊事班班长</small>
+                    <p>负责班里的起居饮</p>
+                    <div class="userevent">
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil"></span> 修改</buttom>
+                        <buttom class="btn btn-default btn-xs"><span class="glyphicon glyphicon-eye-open"></span> 审核</buttom>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row text-center">
+        <ul class="pagination pagination-sm">
+            <li class=""><a href="#">共80条</a></li>
+            <li><input type="text" class="input" id="" placeholder="页码"></li>
+            <li><a href="javascript:" onclick="">跳转</a></li>
+            <li class=""><a href="#">首页</a></li>
+            <li class=""><a href="#">上一页</a></li>
+            <li class=""><a href="#">1</a></li>
+            <li class=""><a href="#">尾页</a></li>
+            <li class=""><a href="#">下一页</a></li>
+            <li class=""><a href="#">第1页</a></li>
+            <li class=""><a href="#">共5页</a></li>
+        </ul>
+</div>
+<script type="text/javascript" src="scripts/plugins/require.js"></script>
+<script>
+    require(['./scripts/boot'], function () {
+        require(['page/user']);
+    });
+</script>
+</body>
+</html>

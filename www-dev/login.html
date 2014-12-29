@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="renderer" content="webkit">
+    <title>用户登录-政务系统统一身份认证系统</title>
+    <meta name="description" content="政务系统统一身份认证系统">
+    <!-- 禁用bootstrap响应式 -->
+    <!--<meta name="viewport" content="width=device-width">-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/page/common.css">
+    <link rel="stylesheet" href="styles/page/login.css">
+    <link rel="stylesheet" href="styles/bootstrapValidator/bootstrapValidator.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="scripts/plugins/html5shiv/html5shiv.min.js"></script>
+    <script src="scripts/plugins/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <img src="images/logo-login.jpg" title="政务系统统一身份认证系统">
+        </div>
+    </div>
+</nav>
+<div class="jumbotron">
+    <div class="bn-alp">
+        <ul class="box">
+            <li class="on">
+                <img src="https://i.alipayobjects.com/i/ecmng/png/201412/45gOD1d67h.png" class="bg"/>
+            </li>
+            <li>
+                <img src="https://i.alipayobjects.com/i/ecmng/jpg/201406/2pMuC9bBef_src.jpg" class="bg"/>
+            </li>
+            <li>
+                <img src="https://i.alipayobjects.com/i/ecmng/jpeg/201412/45nrg5SxuH.jpeg" class="bg"/>
+            </li>
+            <li>
+                <img src="https://i.alipayobjects.com/i/ecmng/jpg/201412/3yZzbAHZrx.jpg" class="bg"/>
+            </li>
+            <li>
+                <img src="https://i.alipayobjects.com/i/ecmng/jpg/201406/2pMuCMfPWf_src.jpg" class="bg"/>
+            </li>
+        </ul>
+        <div class="i"></div>
+        <div class="lg-form">
+            <h1>系统登录 |
+                <small>System Login</small>
+            </h1>
+            <form role="form" id="login">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="帐号">
+                </div>
+                <div class="form-group form-group-last">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="密码">
+                </div>
+                <button type="submit" class="btn btn-block btn-lg btn-default">登 录</button>
+                <small class="help-block" style="display: none;" id="errorUsernamePwd">用户名或密码错误。</small>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <footer class="page-footer">
+        <p>京ICP备09083200号 京ICP证070419号 人才服务许可证:RC0710280 京公网安备11010802012824</p>
+        <p> Copyright©2000-2014 liepin.com All Rights Reserved</p>
+    </footer>
+</div>
+<script type="text/javascript" src="scripts/plugins/require.js"></script>
+<script>
+    require(['./scripts/boot'], function () {
+        require(['page/login']);
+    });
+</script>
+</body>
+</html>

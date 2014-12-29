@@ -1,0 +1,29 @@
+/*sidebar menu*/
+.sidebar-nav {
+
+}
+.main{
+    margin-left: 169px;
+    padding: 20px;
+}
+.user-panel {
+    padding: 10px;
+    text-align: center;
+}
+.user-panel img{
+    width: 125px;
+    height: 125px;
+}
+.user-panel p{
+    margin: 10px 0;
+}
+.sidebar-nav .nav-sidebar li {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #dbdbdb;
+}
+.sidebar-nav .nav-sidebar li:first-of-type {
+    border-top: 1px solid #dbdbdb;
+}
+.sidebar-nav .nav-sidebar li a {
+    padding-left:25px;
+}
