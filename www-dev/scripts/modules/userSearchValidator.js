@@ -16,16 +16,27 @@ define(function (require) {
                 },
                 fields: {
                     username: {
+                        selector: '.validator-least-one',
                         validators: {
-                            notEmpty: {
-                                message: ''
-                            }
-                        }
-                    },
-                    regDate: {
-                        validators: {
-                            notEmpty: {
-                                message: ''
+                            callback: {
+                                message: '请输入用户名或日期',
+                                callback: function(value, validator, $field) {
+                                    var isEmpty = true,
+                                    // Get the list of fields
+                                        $fields = validator.getFieldElements('username');
+                                    for (var i = 0; i < $fields.length; i++) {
+                                        if ($fields.eq(i).val() !== '') {
+                                            isEmpty = false;
+                                            break;
+                                        }
+                                    }
+                                    if (!isEmpty) {
+                                        // Update the status of callback validator for all fields
+                                        validator.updateStatus('username', validator.STATUS_VALID, 'callback');
+                                        return true;
+                                    }
+                                    return false;
+                                }
                             }
                         }
                     }

@@ -28,7 +28,7 @@
     font-size: 12px;
 }
 .pagination {
-    margin: 25px 15px 0 15px;
+    margin: 25px 15px 20px 15px;
 }
 .pagination > li > input{
     width: 50px;
@@ -44,9 +44,61 @@
 }
 .search-user{
     position: relative;
+
 }
 .search-user .search-user-remove{
     position: absolute;
     right: 10px;
     top: 10px;
+}
+.search-user .help-block{
+    margin-bottom: 0;
+}
+.search-user .form-inline .btn{
+    vertical-align: top;
+}
+.search-user .form-inline .form-group{
+    margin-right: 20px;
+    vertical-align: top;
+}
+.search-user .form-inline .form-control {
+    vertical-align: top;
+}
+.addusermb{
+    padding-top: 0;
+}
+.addusermb .table{
+
+}
+
+.addusermb .table2{
+    margin-bottom: 0;
+}
+.addusermb .table caption{
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.addusermb .table>tbody>tr>td{
+    border: none;
+    padding:3px 0px;
+}
+.addusermb .table>tbody>tr>td.tdlable{
+    width: 90px;
+}
+.addusermb .table input.inputwidth,.addusermb .table select.inputwidth{
+    width:230px;
+    height:26px;
+}
+.addusermb .table2 input.inputwidth,.addusermb .table2 select.inputwidth{
+    width:322px;
+    height:26px;
+}
+.addusermb .table input.beizhu{
+    width:754px;
+}
+.addusermb .table .userAva img{
+    height: 122px;
+    width: 122px;
 }

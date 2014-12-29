@@ -7,7 +7,9 @@ define(function (require) {
     var placeholder = require("plugins/placeholder/jquery.placeholder"),
         userSearchVld = require("userSearchValidator"),
         $searchUserBtn = $("#searchUserBtn"),
-        $searchUser = $("#searchUser");
+        $searchUser = $("#searchUser"),
+        $addUserBtn = $("#addUserBtn");
+
     $searchUserBtn.on("click", function () {
         $searchUser.show();
         var $searchUserRemove = $("#searchUserRemove");
@@ -18,5 +20,11 @@ define(function (require) {
     $("input").placeholder();
     userSearchVld.validator({formid:"#searchUserForm"});//表单验证
     $('#regDate').datepicker({});
+    $addUserBtn.on("click", function () {
+        $("#addUserModal").modal({
+            remote:"user-edit.html"
+        });
+    })
+
     return {};
 });

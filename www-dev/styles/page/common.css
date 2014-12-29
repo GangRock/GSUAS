@@ -210,3 +210,6 @@ body {
 .img-rounded {
     border-radius: 3px;
 }
+.modal-dialog{
+    margin-top: 60px;
+}
