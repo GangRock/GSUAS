@@ -9,6 +9,7 @@ requirejs.config({
     shim: {
         "bootstrap": ["jquery"],
         "plugins/bootstrapValidator/bootstrapValidator.min": ["jquery"],
-        "plugins/bootstrapValidator/zh_CN.min":["plugins/bootstrapValidator/bootstrapValidator.min"]
+        "plugins/bootstrapValidator/zh_CN.min":["plugins/bootstrapValidator/bootstrapValidator.min"],
+        "plugins/bootstrap/bootstrap-datepicker":["bootstrap"]
     }
 });

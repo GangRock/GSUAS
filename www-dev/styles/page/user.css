@@ -42,3 +42,11 @@
     background-color: #fff;
     border: 1px solid #ddd;
 }
+.search-user{
+    position: relative;
+}
+.search-user .search-user-remove{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
