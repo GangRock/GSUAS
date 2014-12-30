@@ -10,6 +10,7 @@ requirejs.config({
         "bootstrap": ["jquery"],
         "plugins/bootstrapValidator/bootstrapValidator.min": ["jquery"],
         "plugins/bootstrapValidator/zh_CN.min":["plugins/bootstrapValidator/bootstrapValidator.min"],
-        "plugins/bootstrap/bootstrap-datepicker":["bootstrap"]
+        "plugins/bootstrap/bootstrap-datepicker":["bootstrap"],
+        "plugins/ztree/jquery.ztree.all-3.5.min": ["jquery"]
     }
 });

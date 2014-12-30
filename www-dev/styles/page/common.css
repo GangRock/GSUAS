@@ -210,6 +210,10 @@ body {
 .img-rounded {
     border-radius: 3px;
 }
-.modal-dialog{
-    margin-top: 60px;
+.pd8{
+    padding: 8px;
+}
+.modal-body p{
+    margin-bottom: 5px;
+    text-indent: 2em;
 }

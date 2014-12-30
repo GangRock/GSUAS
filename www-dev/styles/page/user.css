@@ -67,38 +67,34 @@
 .addusermb{
     padding-top: 0;
 }
-.addusermb .table{
-
-}
-
-.addusermb .table2{
+.table2{
     margin-bottom: 0;
 }
-.addusermb .table caption{
+.addusermb caption{
     border-bottom: 1px solid #e5e5e5;
     margin-bottom: 15px;
     font-weight: bold;
 }
 
-.addusermb .table>tbody>tr>td{
+.addusermb >tbody>tr>td{
     border: none;
     padding:3px 0px;
 }
-.addusermb .table>tbody>tr>td.tdlable{
+.addusermb >tbody>tr>td.tdlable{
     width: 90px;
 }
-.addusermb .table input.inputwidth,.addusermb .table select.inputwidth{
+.addusermb input.inputwidth,.addusermb select.inputwidth{
     width:230px;
     height:26px;
 }
-.addusermb .table2 input.inputwidth,.addusermb .table2 select.inputwidth{
+.table2 input.inputwidth,.table2 select.inputwidth{
     width:322px;
     height:26px;
 }
-.addusermb .table input.beizhu{
+.addusermb input.beizhu{
     width:754px;
 }
-.addusermb .table .userAva img{
+.addusermb .userAva img{
     height: 122px;
     width: 122px;
 }

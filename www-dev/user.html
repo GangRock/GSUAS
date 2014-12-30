@@ -13,6 +13,7 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="styles/bootstrap/datepicker3.css">
+    <link rel="stylesheet" href="styles/zTreeStyle/zTreeStyle.css">
     <link rel="stylesheet" href="styles/page/common.css">
     <link rel="stylesheet" href="styles/page/user.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -280,22 +281,21 @@
     </div><!-- /.modal-dialog -->
 </div>
 
-<div class="modal fade" id="delUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="delUserModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-plus-sign"></span> 添加用户</h4>
+            <div class="modal-header pd8">
+                <h5 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-info-sign"></span> 删除用户</h5>
             </div>
-            <div class="modal-body">
+            <div class="modal-body pd8">
                 <p>确定要删除该用户吗？</p>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">取 消</button>
-                <button type="button" class="btn btn-danger btn-sm">确 定</button>
+            <div class="modal-footer pd8">
+                <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">取 消</button>
+                <button type="button" class="btn btn-danger btn-xs">确 定</button>
             </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
+        </div>
+    </div>
 </div>
 
 <script type="text/javascript" src="scripts/plugins/require.js"></script>
