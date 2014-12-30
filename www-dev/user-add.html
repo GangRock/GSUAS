@@ -1,0 +1,103 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-plus-sign"></span> 添加用户</h4>
+</div>
+<div class="modal-body addusermb">
+    <table class="table">
+        <caption>个人信息</caption>
+        <tbody>
+        <tr>
+            <td class="tdlable">姓名</td>
+            <td><input type="text" class="inputwidth"></td>
+            <td class="tdlable">所属组织</td>
+            <td><input type="text" class="inputwidth"></td>
+            <td rowspan="4" class="userAva">
+                <img src="images/suer-1.jpg">
+            </td>
+        </tr>
+        <tr>
+            <td>性别</td>
+            <td><input type="text" class="inputwidth"></td>
+            <td>出生日期</td>
+            <td><input type="text" class="inputwidth"></td>
+        </tr>
+        <tr>
+            <td>邮箱</td>
+            <td><input type="text" class="inputwidth"></td>
+            <td>电话</td>
+            <td><input type="text" class="inputwidth"></td>
+        </tr>
+        <tr>
+            <td>身份证号</td>
+            <td><input type="text" class="inputwidth"></td>
+            <td>家庭住址</td>
+            <td><input type="text" class="inputwidth"></td>
+        </tr>
+        </tbody>
+    </table>
+    <hr />
+    <ul id="myTab" class="nav nav-tabs" role="tablist" style="margin-bottom: 15px;">
+        <li role="presentation" class="active"><a href="#userinfo" id="userinfo-tab" role="tab" data-toggle="tab" aria-controls="userinfo" aria-expanded="false">工作人员信息</a></li>
+        <li role="presentation" class=""><a href="#zuzhi" role="tab" id="zuzhi-tab" data-toggle="tab" aria-controls="zuzhi" aria-expanded="true">已分配组织</a></li>
+        <li role="presentation" class=""><a href="#gangwei" role="tab" id="gangwei-tab" data-toggle="tab" aria-controls="gangwei" aria-expanded="true">已分配岗位</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div role="tabpanel" class="tab-pane fade active in" id="userinfo" aria-labelledby="userinfo-tab">
+            <table class="table table2">
+                <tbody>
+                <tr>
+                    <td class="tdlable">公务员编号</td>
+                    <td><input type="text" class="inputwidth"></td>
+                    <td class="tdlable">民族</td>
+                    <td><select class="inputwidth">
+                        <option value="汉族">汉族</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>工作单位</td>
+                    <td><input type="text" class="inputwidth"></td>
+                    <td>行政级别</td>
+                    <td><input type="text" class="inputwidth"></td>
+                </tr>
+                <tr>
+                    <td>单位职务</td>
+                    <td><select class="inputwidth"></select></td>
+                    <td>职务级别</td>
+                    <td><select class="inputwidth"></select></td>
+                </tr>
+                <tr>
+                    <td>入职时间</td>
+                    <td><input type="text" class="inputwidth"></td>
+                    <td>政治面貌</td>
+                    <td><select class="inputwidth"></select></td>
+                </tr>
+                <tr>
+                    <td>入党日期</td>
+                    <td><input type="text" class="inputwidth"></td>
+                    <td>文化程度</td>
+                    <td><select class="inputwidth"></select></td>
+                </tr>
+                <tr>
+                    <td>联系地址</td>
+                    <td><input type="text" class="inputwidth"></td>
+                    <td>状态</td>
+                    <td><select class="inputwidth"></select></td>
+                </tr>
+                <tr>
+                    <td>备注</td>
+                    <td colspan="3"><input type="text" class="beizhu"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="zuzhi" aria-labelledby="zuzhi-tab">
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="gangwei" aria-labelledby="gangwei-tab">
+        </div>
+    </div>
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">取 消</button>
+    <button type="button" class="btn btn-success">确 定</button>
+</div>
