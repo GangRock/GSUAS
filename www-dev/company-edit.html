@@ -1,0 +1,102 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-plus-sign"></span> 单位修改</h4>
+</div>
+<div class="modal-body">
+
+<ul id="myTab" class="nav nav-tabs" role="tablist" style="margin-bottom: 15px;">
+    <li role="presentation" class="active"><a href="#subClassView" id="subClassView-tab" role="tab" data-toggle="tab"
+                                              aria-controls="subClassView" aria-expanded="false">单位查看</a></li>
+    <li role="presentation" class=""><a href="#subClassAdd" role="tab" id="subClassAdd-tab" data-toggle="tab"
+                                        aria-controls="subClassAdd" aria-expanded="true">单位添加</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+    <div role="tabpanel" class="tab-pane fade active in" id="subClassView" aria-labelledby="subClassView-tab">
+        <caption style="padding-top: 0;">
+            <!--<button type="button" class="btn btn-success btn-xs" id="addOrgBtn"><span
+                    class="glyphicon glyphicon-plus"></span> 添 加
+            </button>-->
+            <button type="button" class="btn btn-primary btn-xs pencil" id="saveOrgBtn"><span class="glyphicon glyphicon-pencil"></span> 修 改
+            </button>
+            <button type="button" class="btn btn-danger btn-xs remove" id="delOrgBtn"><span class="glyphicon glyphicon-remove"></span> 删 除
+            </button>
+        </caption>
+        <ul id="org" style="display:none">
+            <li>
+                单位名称
+                <ul>
+                    <li id="beer">单位名称</li>
+                    <li>单位名称
+                        <ul>
+                            <li>单位名称</li>
+                            <li>单位名称</li>
+                        </ul>
+                    </li>
+                    <li class="fruit">单位名称
+                        <ul>
+                            <li>单位名称
+                                <ul>
+                                    <li>单位名称</li>
+                                </ul>
+                            </li>
+                            <li>单位名称
+                                <ul>
+                                    <li>单位名称</li>
+                                    <li>单位名称</li>
+                                    <li>单位名称</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>单位名称</li>
+                    <li class="collapsed">单位名称
+                        <ul>
+                            <li>单位名称</li>
+                            <li>单位名称</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div id="chart" class="orgChart"></div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="subClassAdd" aria-labelledby="subClassAdd-tab">
+        <table class="table addusermb table2">
+            <tbody>
+            <tr>
+                <td class="tdlable">单位名称</td>
+                <td><input type="text" class="inputwidth"></td>
+                <td class="tdlable">单位代码</td>
+                <td><input type="text" class="inputwidth"></td>
+            </tr>
+            <tr>
+                <td>单位描述</td>
+                <td colspan="3"><input type="text" class="beizhu"></td>
+                <!--<td>单位备注</td>
+                <td><input type="file" class="inputwidth"></td>-->
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="modal fade" id="dialogModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header pd8">
+                    <h5 class="modal-title"><span class="glyphicon glyphicon-info-sign"></span> <span id="dialogTitle">删除单位</span></h5>
+                </div>
+                <div class="modal-body pd8">
+                    <p id="dialogContent">确定要删除单位吗？</p>
+                </div>
+                <div class="modal-footer pd8">
+                    <button type="button" class="btn btn-default btn-xs" id="dialogCancel">取 消</button>
+                    <button type="button" class="btn btn-danger btn-xs" id="dialogConfirm">确 定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">取 消</button>
+    <button type="button" class="btn btn-success" id="cfModelModify">确 定</button>
+</div>

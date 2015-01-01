@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>政务系统统一身份认证系统</title>
+    <meta name="description" content="政务系统统一身份认证系统">
+    <!-- 禁用bootstrap响应式
+    <meta name="viewport" content="width=device-width">
+    -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap/datepicker3.css">
+    <link rel="stylesheet" href="styles/jOrgChart/jOrgChart.css">
+    <link rel="stylesheet" href="styles/page/common.css">
+    <link rel="stylesheet" href="styles/page/company.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="scripts/plugins/html5shiv/html5shiv.min.js"></script>
+    <script src="scripts/plugins/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<ul class="nav nav-tabs">
+    <li role="presentation"><a href="user.html">用户管理</a></li>
+    <li role="presentation"><a href="role.html">角色管理</a></li>
+    <li role="presentation"><a href="resources.html">资源管理</a></li>
+    <li role="presentation" class="active"><a href="company.html">单位管理</a></li>
+    <li role="presentation"><a href="department.html">部门管理</a></li>
+    <li role="presentation"><a href="division.html">行政区划</a></li>
+    <li role="presentation"><a href="dictionary.html">字典管理</a></li>
+</ul>
+<div class="row">
+    <div class="col-xs-12 col-btn clearfix">
+        <button type="button" class="btn btn-primary" id="searchUserBtn"><span
+                class="glyphicon glyphicon-search"></span> 搜 索
+        </button>
+        <button type="button" class="btn btn-success" id="addUserBtn"><span
+                class="glyphicon glyphicon-plus-sign"></span> 添 加
+        </button>
+        <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-print"></span> 打 印</button>
+        <button type="button" class="btn btn-danger rightal remove"><span class="glyphicon glyphicon-remove"></span> 删 除</button>
+        <button type="button" class="btn btn-primary rightal pencil"><span class="glyphicon glyphicon-pencil"></span> 修 改</button>
+    </div>
+</div>
+<div class="panel panel-default" style="display: none" id="searchUser">
+    <div class="panel-body search-user">
+        <form class="form-inline" id="searchUserForm">
+            <div class="form-group">
+                <input type="text" class="form-control validator-least-one" name="dictName" id="dictName"
+                       placeholder="角色名称">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control validator-least-one" name="dictCode" id="dictCode"
+                       placeholder="角色别名">
+            </div>
+            <div class="form-group">
+                <select style="height: 34px; vertical-align: middle;">
+                    <option value="">状态</option>
+                    <option value="启用">启用</option>
+                    <option value="禁用">禁用</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-danger">搜 索</button>
+        </form>
+        <a href="javascript:" class="search-user-remove" id="searchUserRemove" title="关闭搜索框"><span
+                class="glyphicon glyphicon-remove"></span></a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="border-div">
+            <table class="table" style="margin-bottom:15px;border-bottom: 1px solid #e5e5e5;">
+                <thead>
+                <tr>
+                    <th class="col-xs-1"><input type="checkbox" id="selectOrgAll"></th>
+                    <th class="col-xs-3">单位名称</th>
+                    <th class="col-xs-2">单位代码</th>
+                    <th class="col-xs-5">单位描述</th>
+                    <th class="col-xs-1">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>图书管理处</td>
+                    <td>68315</td>
+                    <td>泰式按摩为泰国古代医学文化之一，拥有四千多年历史，源远流长。</td>
+                    <td><button type="button" class="btn btn-primary btn-xs pencil"><span
+                            class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                        <button type="button" class="btn btn-danger btn-xs remove"><span
+                                class="glyphicon glyphicon-remove"></span>
+                        </button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>资料库中心</td>
+                    <td>68315</td>
+                    <td>欧式按摩源于古希腊和古罗马，被称为“贵族的运动”</td>
+                    <td><button type="button" class="btn btn-primary btn-xs pencil"><span
+                            class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                        <button type="button" class="btn btn-danger btn-xs remove"><span
+                                class="glyphicon glyphicon-remove"></span>
+                        </button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>图书管理处</td>
+                    <td>68315</td>
+                    <td>泰式按摩为泰国古代医学文化之一，拥有四千多年历史，源远流长。</td>
+                    <td><button type="button" class="btn btn-primary btn-xs pencil"><span
+                            class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                        <button type="button" class="btn btn-danger btn-xs remove"><span
+                                class="glyphicon glyphicon-remove"></span>
+                        </button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>资料库中心</td>
+                    <td>68315</td>
+                    <td>欧式按摩源于古希腊和古罗马，被称为“贵族的运动”</td>
+                    <td><button type="button" class="btn btn-primary btn-xs pencil"><span
+                            class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                        <button type="button" class="btn btn-danger btn-xs remove"><span
+                                class="glyphicon glyphicon-remove"></span>
+                        </button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>图书管理处</td>
+                    <td>68315</td>
+                    <td>泰式按摩为泰国古代医学文化之一，拥有四千多年历史，源远流长。</td>
+                    <td><button type="button" class="btn btn-primary btn-xs pencil"><span
+                            class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                        <button type="button" class="btn btn-danger btn-xs remove"><span
+                                class="glyphicon glyphicon-remove"></span>
+                        </button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>资料库中心</td>
+                    <td>68315</td>
+                    <td>欧式按摩源于古希腊和古罗马，被称为“贵族的运动”</td>
+                    <td><button type="button" class="btn btn-primary btn-xs pencil"><span
+                            class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                        <button type="button" class="btn btn-danger btn-xs remove"><span
+                                class="glyphicon glyphicon-remove"></span>
+                        </button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>图书管理处</td>
+                    <td>68315</td>
+                    <td>泰式按摩为泰国古代医学文化之一，拥有四千多年历史，源远流长。</td>
+                    <td><button type="button" class="btn btn-primary btn-xs pencil"><span
+                            class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                        <button type="button" class="btn btn-danger btn-xs remove"><span
+                                class="glyphicon glyphicon-remove"></span>
+                        </button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>资料库中心</td>
+                    <td>68315</td>
+                    <td>欧式按摩源于古希腊和古罗马，被称为“贵族的运动”</td>
+                    <td><button type="button" class="btn btn-primary btn-xs pencil"><span
+                            class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                        <button type="button" class="btn btn-danger btn-xs remove"><span
+                                class="glyphicon glyphicon-remove"></span>
+                        </button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>图书管理处</td>
+                    <td>68315</td>
+                    <td>泰式按摩为泰国古代医学文化之一，拥有四千多年历史，源远流长。</td>
+                    <td><button type="button" class="btn btn-primary btn-xs pencil"><span
+                            class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                        <button type="button" class="btn btn-danger btn-xs remove"><span
+                                class="glyphicon glyphicon-remove"></span>
+                        </button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>资料库中心</td>
+                    <td>68315</td>
+                    <td>欧式按摩源于古希腊和古罗马，被称为“贵族的运动”</td>
+                    <td><button type="button" class="btn btn-primary btn-xs pencil"><span
+                            class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                        <button type="button" class="btn btn-danger btn-xs remove"><span
+                                class="glyphicon glyphicon-remove"></span>
+                        </button></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="row text-center">
+                <ul class="pagination pagination-sm" style="margin-top: 0;margin-bottom: 15px; ">
+                    <li class=""><a href="#">共80条</a></li>
+                    <li><input type="text" class="input" id="" placeholder="页码"></li>
+                    <li><a href="javascript:" onclick="">跳转</a></li>
+                    <li class=""><a href="#">首页</a></li>
+                    <li class=""><a href="#">上一页</a></li>
+                    <li class=""><a href="#">1</a></li>
+                    <li class=""><a href="#">尾页</a></li>
+                    <li class=""><a href="#">下一页</a></li>
+                    <li class=""><a href="#">第1页</a></li>
+                    <li class=""><a href="#">共5页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<div class="modal fade" id="modifyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<div class="modal fade" id="delModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header pd8">
+                <h5 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-info-sign"></span> 删除单位</h5>
+            </div>
+            <div class="modal-body pd8">
+                <p>确定要删除该单位吗？</p>
+            </div>
+            <div class="modal-footer pd8">
+                <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">取 消</button>
+                <button type="button" class="btn btn-danger btn-xs" id="delConfirmMain">确 定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="scripts/plugins/require.js"></script>
+<script>
+    require(['./scripts/boot'], function () {
+        require(['page/company']);
+    });
+</script>
+</body>
+</html>

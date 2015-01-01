@@ -1,0 +1,148 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-plus-sign"></span> 修改字典</h4>
+</div>
+<div class="modal-body">
+
+<ul id="myTab" class="nav nav-tabs" role="tablist" style="margin-bottom: 15px;">
+    <li role="presentation" class="active"><a href="#subClassView" id="subClassView-tab" role="tab" data-toggle="tab"
+                                              aria-controls="subClassView" aria-expanded="false">小类查看</a></li>
+    <li role="presentation" class=""><a href="#subClassAdd" role="tab" id="subClassAdd-tab" data-toggle="tab"
+                                        aria-controls="subClassAdd" aria-expanded="true">小类添加</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+    <div role="tabpanel" class="tab-pane fade active in" id="subClassView" aria-labelledby="subClassView-tab">
+        <table class="table" style="margin-bottom:15px;border-bottom: 1px solid #e5e5e5;">
+            <caption style="padding-top: 0;">
+                <!--<button type="button" class="btn btn-success btn-xs" id="addOrgBtn"><span
+                        class="glyphicon glyphicon-plus"></span> 添 加
+                </button>-->
+                <button type="button" class="btn btn-primary btn-xs pencil" id="saveOrgBtn"><span
+                        class="glyphicon glyphicon-pencil"></span> 修 改
+                </button>
+                <button type="button" class="btn btn-danger btn-xs remove" id="delOrgBtn"><span
+                        class="glyphicon glyphicon-remove"></span> 删 除
+                </button>
+            </caption>
+            <thead>
+            <tr>
+                <th class="col-xs-1"><input type="checkbox" id="selectOrgAll"></th>
+                <th class="col-xs-2">小类名称</th>
+                <th class="col-xs-2">小类代码</th>
+                <th class="col-xs-5">小类描述</th>
+                <th class="col-xs-2">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>泰式</td>
+                <td>68315</td>
+                <td>泰式按摩为泰国古代医学文化之一，拥有四千多年历史，源远流长。</td>
+                <td><button type="button" class="btn btn-primary btn-xs pencil"><span
+                        class="glyphicon glyphicon-pencil"></span> 修 改
+                </button>
+                    <button type="button" class="btn btn-danger btn-xs remove"><span
+                            class="glyphicon glyphicon-remove"></span> 删 除
+                    </button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>欧式</td>
+                <td>68315</td>
+                <td>欧式按摩源于古希腊和古罗马，被称为“贵族的运动”</td>
+                <td><button type="button" class="btn btn-primary btn-xs pencil"><span
+                        class="glyphicon glyphicon-pencil"></span> 修 改
+                </button>
+                    <button type="button" class="btn btn-danger btn-xs remove"><span
+                            class="glyphicon glyphicon-remove"></span> 删 除
+                    </button></td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="row text-center">
+            <ul class="pagination pagination-sm" style="margin-top: 0;margin-bottom: 0; ">
+                <li class=""><a href="#">共80条</a></li>
+                <li><input type="text" class="input" id="" placeholder="页码"></li>
+                <li><a href="javascript:" onclick="">跳转</a></li>
+                <li class=""><a href="#">首页</a></li>
+                <li class=""><a href="#">上一页</a></li>
+                <li class=""><a href="#">1</a></li>
+                <li class=""><a href="#">尾页</a></li>
+                <li class=""><a href="#">下一页</a></li>
+                <li class=""><a href="#">第1页</a></li>
+                <li class=""><a href="#">共5页</a></li>
+            </ul>
+        </div>
+        <div class="modal fade" id="addOrgBtnModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header pd8">
+                        <h5 class="modal-title">修改小类</h5>
+                    </div>
+                    <div class="modal-body" style="padding: 15px 15px 15px 17px;">
+                        <table class="table addusermb table2">
+                            <tbody>
+                            <tr>
+                                <td class="tdlable">小类名称</td>
+                                <td><input type="text" class="inputwidth"></td>
+                                <td class="tdlable">小类代码</td>
+                                <td><input type="text" class="inputwidth"></td>
+                            </tr>
+                            <tr>
+                                <td>小类描述</td>
+                                <td colspan="3"><input type="text" class="beizhu"></td>
+                                <!--<td>小类备注</td>
+                                <td><input type="file" class="inputwidth"></td>-->
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer pd8">
+                        <button type="button" class="btn btn-default btn-xs" id="closeOrgModel">关 闭</button>
+                        <button type="button" class="btn btn-primary btn-xs" id="cfOrgModel">确 定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="subClassAdd" aria-labelledby="subClassAdd-tab">
+        <table class="table addusermb table2">
+            <tbody>
+            <tr>
+                <td class="tdlable">小类名称</td>
+                <td><input type="text" class="inputwidth"></td>
+                <td class="tdlable">小类代码</td>
+                <td><input type="text" class="inputwidth"></td>
+            </tr>
+            <tr>
+                <td>小类描述</td>
+                <td colspan="3"><input type="text" class="beizhu"></td>
+                <!--<td>小类备注</td>
+                <td><input type="file" class="inputwidth"></td>-->
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="modal fade" id="dialogModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header pd8">
+                    <h5 class="modal-title"><span class="glyphicon glyphicon-info-sign"></span> <span id="dialogTitle">删除小类</span></h5>
+                </div>
+                <div class="modal-body pd8">
+                    <p id="dialogContent">确定要删除小类吗？</p>
+                </div>
+                <div class="modal-footer pd8">
+                    <button type="button" class="btn btn-default btn-xs" id="dialogCancel">取 消</button>
+                    <button type="button" class="btn btn-danger btn-xs" id="dialogConfirm">确 定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">取 消</button>
+    <button type="button" class="btn btn-success" id="mainmodalConfirm">确 定</button>
+</div>
