@@ -217,3 +217,107 @@ body {
     margin-bottom: 5px;
     text-indent: 2em;
 }
+
+.col-btn{
+    padding: 15px 10px;
+}
+.col-btn button{
+    margin-right: 10px;
+    font-size: 12px;
+}
+.col-btn button.rightal{
+    float: right;
+}
+.userlistwp{
+    padding: 10px 10px 10px 0;
+}
+.userlistwp .userlistbox{
+    border: 1px solid #d8d8d8;
+    border-radius:3px;
+}
+.userlistwp .userinfo{
+    padding: 5px 8px;
+
+}
+.userlistwp .name{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.userlistwp .userevent {
+    color: #d43f3a;
+    font-size: 12px;
+}
+.pagination {
+    margin: 25px 15px 20px 15px;
+}
+.pagination > li > input{
+    width: 50px;
+    position: relative;
+    float: left;
+    padding: 3px 8px 4px 8px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.search-user{
+    position: relative;
+
+}
+.search-user .search-user-remove{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.search-user .help-block{
+    margin-bottom: 0;
+}
+.search-user .form-inline .btn{
+    vertical-align: top;
+}
+.search-user .form-inline .form-group{
+    margin-right: 20px;
+    vertical-align: top;
+}
+.search-user .form-inline .form-control {
+    vertical-align: top;
+}
+.addusermb{
+    padding-top: 0;
+}
+.table2{
+    margin-bottom: 0;
+}
+.addusermb caption{
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.addusermb >tbody>tr>td{
+    border: none;
+    padding:3px 0px;
+}
+.addusermb >tbody>tr>td.tdlable{
+    width: 90px;
+}
+.addusermb input.inputwidth,.addusermb select.inputwidth{
+    width:230px;
+    height:26px;
+}
+.table2 input.inputwidth,.table2 select.inputwidth{
+    width:322px;
+    height:26px;
+}
+.addusermb input.beizhu{
+    width:754px;
+}
+.addusermb .userAva img{
+    height: 122px;
+    width: 122px;
+}
+.border-div{
+    border: 1px solid #dddddd;
+}
